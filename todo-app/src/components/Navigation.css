@@ -1,0 +1,39 @@
+.navigation-bar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Фиолетово-синий градиент */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; /* Белый цвет текста для контраста с градиентом */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Плавные наведения и тени */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон при наведении */
+  transform: translateY(-2px); /* Небольшое поднятие при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиленная тень при наведении */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    width: 80%; /* Шире кнопки на мобильных */
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
+}

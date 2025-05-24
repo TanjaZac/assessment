@@ -1,0 +1,92 @@
+.todo-input {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2a2a; /* Темный фон для формы */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Глубокая тень */
+  transition: all 0.3s ease;
+}
+
+.todo-input:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Усиленная тень при наведении */
+}
+
+.todo-input h3 {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8em;
+}
+
+.todo-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Для адаптивности */
+}
+
+.todo-input-field {
+  flex-grow: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #6a11cb; /* Фиолетовая обводка */
+  border-radius: 8px;
+  background-color: #3a3a3a; /* Темный фон поля ввода */
+  color: #e0e0e0;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-input-field:focus {
+  border-color: #2575fc; /* Синяя обводка при фокусе */
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5); /* Свечение при фокусе */
+  outline: none;
+}
+
+.add-btn {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Яркий градиент */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Легкая тень */
+}
+
+.add-btn:hover {
+  transform: translateY(-3px); /* Анимация поднятия */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Усиленная тень */
+  background: linear-gradient(to right, #2575fc 0%, #6a11cb 100%); /* Инвертированный градиент */
+}
+
+.add-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.input-hint {
+  color: #aaa;
+  font-size: 0.9em;
+  text-align: right;
+  margin-top: -0.5rem; /* Поднять ближе к полю ввода */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .todo-input-field,
+  .add-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.todo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 900px; /* Ограничение ширины для лучшего чтения */
+  margin: 0 auto; /* Центрирование страницы */
+}
+
+.todo-page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.todo-page-header h1 {
+  font-size: 3em;
+  margin-bottom: 0.5rem;
+  color: #6a11cb; /* Фиолетовый заголовок */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для заголовка */
+}
+
+.todo-page-header p {
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+.todo-page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .todo-page {
+    padding: 1rem;
+  }
+
+  .todo-page-header h1 {
+    font-size: 2.5em;
+  }
+}

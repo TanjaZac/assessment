@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0; /* Убрал padding, чтобы main мог занимать всю высоту */
+  text-align: center;
+  min-height: 100vh; /* Убедимся, что root занимает всю высоту */
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main-content {
+  flex-grow: 1; /* Позволяет main занимать все доступное пространство */
+  padding: 2rem; /* Добавил padding здесь */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Выравнивание по верху */
+}
