@@ -2,7 +2,7 @@
 
 This is a responsive, multi-page TODO List web application built using **React** and **Vite**, featuring a custom-made global state management solution. The app was developed as part of a technical assignment to demonstrate the use of Context and Hooks for sharing state across components.
 
-![Screenshot](./public/screenshot.png) <!-- optional: add your screenshot here -->
+![Screenshot](https://github.com/TanjaZac/assessment/raw/main/screenshot.png) <!-- optional: add your screenshot here -->
 
 ---
 

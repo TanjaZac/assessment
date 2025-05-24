@@ -9,22 +9,32 @@
 - (Potentially) A component library like Material-UI (decision pending based on design phase).
 
 **Development Setup:**
-- Standard Node.js and npm/yarn environment.
-- React development server for local development.
+- Vite-based React development environment with JavaScript template.
+- Development server running on http://localhost:5173/.
+- Node.js and npm environment successfully configured.
 - Code editor (VS Code recommended).
-- Task Master for task management.
+- Task Master for task management and progress tracking.
 
 **Technical Constraints:**
 - No data persistence after page refresh (data stored in memory).
 - Must use the provided custom GlobalState implementation.
 
 **Dependencies:**
-- `react`
-- `react-dom`
-- (Potentially) A component library (e.g., `@mui/material`, `@emotion/react`, `@emotion/styled` for Material-UI).
-- Task Master (installed globally or via npx).
+- `react` - UI library ✅ WORKING
+- `react-dom` - DOM rendering ✅ WORKING  
+- `react-router-dom` - Client-side routing ✅ WORKING
+- `vite` - Build tool and dev server ✅ WORKING
+- Task Master (MCP server integration) - Project management ✅ WORKING
+
+**Future Dependencies (based on expanded subtasks):**
+- Accessibility testing tools (`axe-core`, `@testing-library/jest-dom`)
+- Performance monitoring tools
+- CSS framework or component library (optional Material-UI)
+- Testing utilities for comprehensive test suite
 
 **Tool Usage Patterns:**
-- Using Task Master CLI/MCP tools for managing tasks (list, next, show, set-status, expand, analyze-complexity, generate).
-- Utilizing AI features in Task Master for task breakdown and analysis.
-- Using standard development tools (terminal, code editor, browser).
+- **Task Master MCP Integration:** Using MCP server tools for comprehensive task management (get_tasks, set_task_status, add_subtask, expand_task, analyze_project_complexity)
+- **AI-Powered Analysis:** Leveraging Task Master's complexity analysis for informed task breakdown (resulted in 46 detailed subtasks)
+- **Development Workflow:** Vite dev server on http://localhost:5173/ with hot reload
+- **Memory Bank Workflow:** Systematic documentation updates across sessions for context preservation
+- **Browser Testing:** Live testing of TODO functionality in development environment
