@@ -21,37 +21,45 @@ This is a responsive, multi-page TODO List web application built using **React**
 
 ```bash
 todo-app/
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-├── vite.config.js
+├── .gitignore                # Files/folders to exclude from Git (e.g., node_modules, .env)
+├── eslint.config.js          # Linting rules to ensure code style and catch bugs
+├── index.html                # Root HTML file for the React app
+├── package-lock.json         # Dependency lock file (auto-generated)
+├── package.json              # Project metadata, scripts, and dependencies
+├── README.md                 # Project overview and setup instructions
+├── vite.config.js            # Configuration file for Vite build tool
+
 ├── public/
-│   └── vite.svg
-└── src/
-    ├── App.css
-    ├── App.jsx
-    ├── index.css
-    ├── main.jsx
+│   └── vite.svg              # Default Vite logo used at setup (can be deleted/replaced)
+
+└── src/                      # Main application source code
+    ├── App.css              # Global CSS for the App layout
+    ├── App.jsx              # Main React component with routes and layout
+    ├── index.css            # Optional CSS resets or root styles
+    ├── main.jsx             # React entry point — mounts <App /> to DOM
+
     ├── assets/
-    │   └── react.svg
-    ├── components/
-    │   ├── Navigation.css
-    │   ├── Navigation.jsx
-    │   ├── TodoInput.css
-    │   ├── TodoInput.jsx
-    │   ├── TodoList.css
-    │   └── TodoList.jsx
+    │   └── react.svg        # Placeholder image/logo (optional)
+
+    ├── components/          # Reusable UI components
+    │   ├── Navigation.css   # Styling for top navigation bar
+    │   ├── Navigation.jsx   # Header with page links (Home, Todos, About)
+    │   ├── TodoInput.css    # Styling for task input form
+    │   ├── TodoInput.jsx    # Form component to add new TODOs
+    │   ├── TodoList.css     # Styling for list of TODO items
+    │   └── TodoList.jsx     # Component that renders tasks and handles edit/delete
+
     ├── context/
-    │   └── GlobalState.jsx
-    ├── hooks/
-    ├── pages/
-    │   ├── AboutPage.jsx
-    │   ├── HomePage.jsx
-    │   ├── TodoPage.css
-    │   └── TodoPage.jsx
+    │   └── GlobalState.jsx  # Custom global state manager using React Context + Hooks
+
+    ├── hooks/               # Custom hooks (empty or to be added later)
+
+    ├── pages/               # Top-level pages for routing
+    │   ├── AboutPage.jsx    # Static informational page
+    │   ├── HomePage.jsx     # Welcome/intro page
+    │   ├── TodoPage.css     # Page-specific styles for TODO view
+    │   └── TodoPage.jsx     # The main TODO List page with all logic
+
 
 🛠️ Technologies
 React
