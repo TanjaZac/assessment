@@ -85,8 +85,10 @@ The system is extensible and designed to be testable and maintainable.
 
 📦 Installation
 Clone the repository and install dependencies:
+
+```bash
 git clone https://github.com/TanjaZac/assessment.git
-cd assessment
+cd assessment/todo-app
 npm install
 npm run dev
 
