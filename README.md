@@ -21,16 +21,37 @@ This is a responsive, multi-page TODO List web application built using **React**
 
 ```bash
 todo-app/
-├── public/             # Static assets (index.html, icons, etc.)
-├── src/
-│   ├── components/     # Reusable UI components (TodoForm, TodoList, etc.)
-│   ├── context/        # GlobalState implementation
-│   ├── pages/          # Page views for routing
-│   ├── App.jsx         # Main app with Router
-│   └── main.jsx        # Entry point
-├── package.json        # Dependencies
-├── vite.config.js      # Vite configuration
-└── README.md
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── vite.config.js
+├── public/
+│   └── vite.svg
+└── src/
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── assets/
+    │   └── react.svg
+    ├── components/
+    │   ├── Navigation.css
+    │   ├── Navigation.jsx
+    │   ├── TodoInput.css
+    │   ├── TodoInput.jsx
+    │   ├── TodoList.css
+    │   └── TodoList.jsx
+    ├── context/
+    │   └── GlobalState.jsx
+    ├── hooks/
+    ├── pages/
+    │   ├── AboutPage.jsx
+    │   ├── HomePage.jsx
+    │   ├── TodoPage.css
+    │   └── TodoPage.jsx
 
 🛠️ Technologies
 React
